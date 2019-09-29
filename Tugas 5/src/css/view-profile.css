@@ -1,0 +1,280 @@
+* {
+    margin: 0px;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
+    color: #031A3D;
+}
+
+/* =========== NAVIGATION =========== */
+
+nav {
+    height: 50px;
+    background-color: #031A3D;
+    position: fixed;
+    z-index: 1;
+    padding: 10px 0px;
+}
+
+.button {
+    height: 100%;
+    float: left;
+    transition: background-color 0.3s;
+}
+
+.button span {
+    color: white;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button:hover {
+    background-color: #B2D7F2;
+}
+
+.button:hover span {
+    color: #031A3D;
+}
+
+/* =========== SECTION HEADER =========== */
+
+header {
+    background-color: #B2D7F2;
+    height: 550px;
+}
+
+#header-content {
+    margin-top: 15%;
+}
+
+#header-content p {
+    text-align: center;
+}
+
+#header-info {
+    margin-top: 25px;
+}
+
+#header-name p {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#header-roles {
+    margin-top: 25px;
+}
+
+#header-photo img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 0px grey;
+}
+
+/* =========== SECTION ABOUT =========== */
+
+#about {
+    height: 600px;
+}
+
+#about-title {
+    margin-top: 90px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#about-content {
+    margin-top: 60px;
+}
+
+#description-title, #education-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#description {
+    line-height: 25px;
+}
+
+#description-text {
+    text-align: justify;
+}
+
+#education {
+    margin-left: 25px;
+}
+
+#education-text {
+    line-height: 40px;
+}
+
+/* =========== SECTION SKILLS =========== */
+
+#skills {
+    background-color: #B2D7F2;
+    height: 550px;
+}
+
+#skills-title {
+    margin-top: 90px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#skills-content {
+    margin-top: 90px;
+}
+
+#skills-content p {
+    font-size: 1.3em;
+}
+
+#skills-content img {
+    height: 200px;
+}
+
+#skills-content img:first-child {
+    margin-left: 3%;
+}
+
+#skills-content img:last-child {
+    margin-top: 10px;
+    height: 190px;
+}
+
+#decision-answer {
+    margin-top: 50px;
+}
+
+#skills-content > p {
+    text-align: center;
+}
+
+/* =========== SECTION PORTOFOLIO =========== */
+
+#portofolio {
+    height: 550px;
+}
+
+#portofolio-title {
+    margin-top: 90px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#portofolio-content {
+    margin-top: 90px;
+}
+
+#portofolio-content p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+#portofolio-content img {
+    width: 170px;
+}
+
+#portofolio-content img {
+    transition: transform 0.5s;
+}
+
+#portofolio-content img:hover {
+    transform: translateY(-15px)
+}
+
+#index-portofolio-content {
+    margin-top: 90px;
+}
+
+/* =========== SECTION CONTACT =========== */
+
+#contact {
+    background-color: #B2D7F2;
+    height: 480px;
+}
+
+#contact-title {
+    margin-top: 90px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact-content {
+    margin-top: 90px;
+}
+
+#contact-content div {
+    float: left;
+}
+
+#contact-content img {
+    width: 60px;
+}
+
+#social-media img {
+    margin-right: 5px;
+}
+
+#social-media a {
+    text-decoration: none;
+}
+
+#phone-number img, #mail img {
+    margin-left: 35%;
+}
+
+#mail img {
+    margin-top: 10px;
+}
+
+#social-media img {
+    margin-top: 5px;
+    transition: transform 0.5s;
+}
+
+#social-media img:hover {
+    transform: translateY(-10px);
+}
+
+#phone-number p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#social-media p {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#mail p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* =========== SECTION FOOTER =========== */
+
+footer {
+    height: 50px;
+    background-color: #031A3D;
+}
+
+footer p {
+    color: white;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

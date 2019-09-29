@@ -1,0 +1,253 @@
+* {
+    margin: 0px;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
+    color: #031A3D;
+}
+
+/* =========== NAVIGATION =========== */
+
+nav {
+    height: 50px;
+    background-color: #031A3D;
+    position: fixed;
+    z-index: 1;
+    padding: 10px 0px;
+}
+
+.button {
+    height: 100%;
+    float: left;
+    transition: background-color 0.3s;
+}
+
+.button span {
+    color: white;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button:hover {
+    background-color: #B2D7F2;
+}
+
+.button:hover span {
+    color: #031A3D;
+}
+
+/* =========== SECTION HEADER =========== */
+
+header {
+    background-color: #B2D7F2;
+    height: 550px;
+}
+
+#header-photo {
+    margin-top: 150px;
+}
+
+#header-photo img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 0px grey;
+}
+
+#header-info {
+    margin-top: 25px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#header-info p:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* =========== SECTION ABOUT =========== */
+
+#about {
+    height: 600px;
+}
+
+#about-title {
+    margin-top: 90px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#about-content {
+    margin-top: 60px;
+}
+
+#description-title, #education-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#description {
+    text-align: justify;
+    line-height: 25px;
+}
+
+#education {
+    margin-left: 25px;
+}
+
+#education-text {
+    line-height: 40px;
+}
+
+/* =========== SECTION SKILLS =========== */
+
+#skills {
+    background-color: #B2D7F2;
+    height: 550px;
+}
+
+#skills-title {
+    margin-top: 90px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#skills-content {
+    margin-top: 90px;
+}
+
+#skills-content img {
+    height: 200px;
+}
+
+#skills-content img:first-child {
+    margin-left: 3%;
+}
+
+#skills-content img:last-child {
+    margin-top: 10px;
+    height: 190px;
+}
+
+/* =========== SECTION PORTOFOLIO =========== */
+
+#portofolio {
+    height: 550px;
+}
+
+#portofolio-title {
+    margin-top: 90px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#portofolio-content {
+    margin-top: 90px;
+}
+
+#portofolio-content p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+#portofolio-content img {
+    width: 170px;
+}
+
+#portofolio-content img {
+    transition: transform 0.5s;
+}
+
+#portofolio-content img:hover {
+    transform: translateY(-15px)
+}
+
+/* =========== SECTION CONTACT =========== */
+
+#contact {
+    background-color: #B2D7F2;
+    height: 480px;
+}
+
+#contact-title {
+    margin-top: 90px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact-content {
+    margin-top: 90px;
+}
+
+#contact-content div {
+    float: left;
+}
+
+#contact-content img {
+    width: 60px;
+}
+
+#social-media img {
+    margin-right: 5px;
+}
+
+#social-media a {
+    text-decoration: none;
+}
+
+#phone-number img, #mail img {
+    margin-left: 35%;
+}
+
+#mail img {
+    margin-top: 10px;
+}
+
+#social-media img {
+    margin-top: 5px;
+    transition: transform 0.5s;
+}
+
+#social-media img:hover {
+    transform: translateY(-10px);
+}
+
+#phone-number p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#social-media p {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#mail p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+footer {
+    height: 50px;
+    background-color: #031A3D;
+}
+
+/* =========== SECTION CONTACT =========== */
+
+footer p {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="css/portofolio-style.css">
+    <link rel="stylesheet" href="css/960_16_col.css">
+</head>
+<body class="container_16">
+    <nav class="grid_16">
+        <a href="#" class="button grid_2"><span>Home</span></a>
+        <a href="#about" class="button grid_2"><span>About</span></a>
+        <a href="#skills" class="button grid_2"><span>Skills</span></a>
+        <a href="#portofolio" class="button grid_2"><span>Portofolio</span></a>
+        <a href="#contact" class="button grid_2"><span>Contact</span></a>
+    </nav>
+
+    <header class="grid_16">
+        <div id="header-content">
+            <div id="header-photo" class="grid_16 alpha omega">
+                <img src="img/photo-profile.png" alt="My photo profile" class="grid_4 push_6">
+            </div>
+            <div id="header-info" class="grid_16 alpha omega">
+                <div id="header-name" class="grid_6 push_5">
+                    <?php echo "<p>".$_POST['header-name']."</p>";?>
+                </div>
+                <div id="header-roles" class="grid_10 push_3">
+                    <?php echo "<p>".$_POST['header-roles']."</p>" ?>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="grid_16" class="grid_16">
+        <p id="about-title" class="grid_16 alpha omega">ABOUT</p>
+        <div id="about-content" class="grid_16 alpha omega">
+            <div id="description" class="grid_6 push_2">
+                <p id="description-title">Deskripsi</p>
+                <?php echo "<p id=\"description-text\">".$_POST['about-description']."</p>" ?>
+            </div>
+            <div id="education" class="grid_6 push_2">
+                <p id="education-title">Riwayat pendidikan</p>
+                <div id="education-text">
+                    <ul>
+                        <?php 
+                            echo "<li>".$_POST['elementary-school']."</li>";
+                            echo "<li>".$_POST['jh-school']."</li>";
+                            echo "<li>".$_POST['sh-school']."</li>";
+                            echo "<li>".$_POST['university']."</li>";
+                        ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="grid_16">
+        <p id="skills-title">SKILLS</p>
+        <div id="skills-content" class="grid_16 alpha omega">
+        <?php 
+            if ($_POST['show-skills'] == "SHOW") {
+        ?>
+                <img src="img/html5.png" alt="HTML5" class="grid_3">
+                <img src="img/css3.png" alt="CSS3" class="grid_3">
+                <img src="img/javascript.png" alt="JS" class="grid_3">
+                <img src="img/android.png" alt="Adroid" class="grid_3">
+                <img src="img/python.png" alt="Python" class="grid_3">
+        <?php
+            } else {
+                echo "<p>-</p>";
+            }
+        ?>
+        </div>
+    </section>
+
+    <section id="portofolio" class="grid_16">
+        <p id="portofolio-title">PORTOFOLIO</p>
+        <div id="portofolio-content" class="grid_16 alpha omega">
+        <?php 
+            if ($_POST['show-portofolio'] == "SHOW") {
+        ?>
+                <div class="grid_3 push_2">
+                    <p>Github</p>
+                    <a href="#x">
+                        <img src="img/github.svg" alt="Github account">
+                    </a>
+                </div>
+                <div class="grid_3 push_3">
+                    <p>Dicoding</p>
+                    <a href="#x">
+                        <img src="img/dicoding.png" alt="Dicoding account">
+                    </a>
+                </div>
+                <div class="grid_3 push_4">
+                    <p>Website</p>
+                    <a href="#x">
+                        <img src="img/lab-it.png" alt="Website">
+                    </a>
+                </div>
+        <?php
+            } else {
+                echo "<p>-</p>";
+            }
+        ?>
+        </div>
+    </section>
+
+    <section id="contact" class="grid_16">
+        <p id="contact-title">CONTACT</p>
+        <div id="contact-content" class="prefix_2">
+            <div id="social-media" class="grid_4">
+                <a href="#x">
+                    <img src="img/facebook.png" alt="Facebook Account">
+                </a>
+                <a href="#x">
+                    <img src="img/instagram.png" alt="Instagram Account">
+                </a>
+                <a href="#x">
+                    <img src="img/linkedIn.png" alt="LinkedIn Account">
+                </a>
+                <p>Social Media</p>
+            </div>
+            <div id="phone-number" class="grid_4">
+                <img src="img/whatsapp.png" alt="WhatsApp">
+                <?php echo "<p>".$_POST['phone-number']."</p>" ?>
+            </div>
+            <div id="mail" class="grid_4">
+                <img src="img/gmail.svg" alt="Gmail">
+                <?php echo "<p>".$_POST['email']."</p>" ?>
+            </div>
+        </div>
+    </section>
+
+    <footer class="grid_16">
+        <p>Made with &#10084; by @mramirid</p>
+    </footer>
+</body>
+</html>

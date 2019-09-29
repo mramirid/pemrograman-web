@@ -1,0 +1,16 @@
+input[type=text], button {
+    border-radius: 4px;
+    height: 25px;
+    border: 1px solid #003D6A;
+}
+
+button {
+    background-color: #003D6A;
+    color: white;
+}
+
+button:hover {
+    background-color: #BCDEFD;
+    color: #003D6A;
+}
+

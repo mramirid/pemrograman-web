@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #031A3D;
+}
+
+/* =========== NAVIGATION =========== */
+
+nav {
+    position: fixed;
+    background-color: #031A3D;
+    height: 30px;
+    width: 100%;
+    box-shadow: 0px 0px 15px 0px black;
+    padding: 20px;
+    z-index: 1;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+    font-size: 1em;
+}
+
+.name {
+    margin-left: 0px;
+    font-size: 1.2em;
+}
+
+.separator {
+    display: inline;
+    font-size: 1.2em;
+}
+
+.button:hover {
+    color: #B2D7F2;
+}
+
+/* =========== SECTION HEADER =========== */
+
+header {
+    background-color: #B2D7F2;
+    height: 630px;
+    width: 100%;
+}
+
+#header-info {
+    transform: translateY(150px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 0px grey;
+}
+
+#header-name {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#header-roles {
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+/* =========== SECTION ABOUT =========== */
+
+#about {
+    background-color: white;
+    height: 630px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#about-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+#about-content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#description, #education {
+    flex: 0 0 50%;
+    line-height: 25px;
+}
+
+#description {
+    margin-right: 50px;
+}
+
+#description-title, #education-title {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#description-content {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#education-content {
+    margin-top: 10px;
+}
+
+#education-content p {
+    margin-bottom: 10px;
+}
+
+/* =========== SECTION SKILLS =========== */
+
+#skills {
+    background-color: #B2D7F2;
+    height: 630px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#skills-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+#skills-content {
+    margin-top: 80px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.img-skills {
+    height: 180px;
+}
+
+/* =========== SECTION PORTOFOLIO =========== */
+
+#portofolio {
+    background-color: white;
+    height: 630px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#portofolio-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+#portofolio-content {
+    margin-top: 80px;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+#portofolio-content img {
+    width: 200px;
+    transition: width 0.2s
+}
+
+#portofolio-content img:hover {
+    width: 250px;
+}
+
+#portofolio-content a {
+    text-decoration: none;
+}
+
+#portofolio-content > a .content-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* =========== SECTION CONTACT =========== */
+
+#contact {
+    background-color: #B2D7F2;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#contact-content {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+#social-media {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-media img {
+    width: 50px;
+    transition: width 0.5s;
+}
+
+#social-media img:hover {
+    width: 60px;
+}
+
+#phone-number {
+    width: 20%;
+}
+
+#phone-number, #mail {
+    display: flex;
+    align-items: center;
+}
+
+#mail {
+    width: 20%;
+}
+
+#phone-number img, #mail img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* =========== FOOTER =========== */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    background-color: #031A3D;
+}
