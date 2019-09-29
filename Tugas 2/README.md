@@ -1,2 +1,2 @@
 # Tugas 2
- Pembuatan Web-Profile dengan bantuan 960 Grid System CSS
+ Pengembangan dari tugas 1 dengan bantuan 960 Grid System CSS

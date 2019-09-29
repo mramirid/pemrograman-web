@@ -1,2 +1,2 @@
 # Tugas 1
- Pembuatan Web-Profile
+ Impelementasi pembuatan web-profile dengan menggunakan HTML & CSS
