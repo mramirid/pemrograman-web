@@ -1,5 +1,5 @@
 <?php 
-    include('conn.php');
+	include('conn.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,9 +44,9 @@
 									&nbsp;
 									<a href="<?php echo "view-profile.php?no=".$data['no'];?>"> View</a>
 									&nbsp;|&nbsp;
-									<a href="<?php echo "update.php?nrp=".$data['nrp']; ?>"> Update</a>
+									<a href="<?php echo "update.php?no=".$data['no']; ?>"> Update</a>
 									&nbsp;|&nbsp;	
-									<a href="<?php echo "delete.php?nrp=".$data['nrp']; ?>"> Delete</a>
+									<a href="<?php echo "delete.php?no=".$data['no']; ?>"> Delete</a>
 									&nbsp;
 								</td>
 							</tr>
