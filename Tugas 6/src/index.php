@@ -41,7 +41,13 @@
 								<td><?php echo $data['roles'];?></td>
 								<td><?php echo $data['phone'];?></td>
 								<td align="center">
-									<a href="<?php echo "view-profile.php?no=".$data['no'];?>" class="button-action"> View</a>
+									&nbsp;
+									<a href="<?php echo "view-profile.php?no=".$data['no'];?>"> View</a>
+									&nbsp;|&nbsp;
+									<a href="<?php echo "update.php?nrp=".$data['nrp']; ?>"> Update</a>
+									&nbsp;|&nbsp;	
+									<a href="<?php echo "delete.php?nrp=".$data['nrp']; ?>"> Delete</a>
+									&nbsp;
 								</td>
 							</tr>
 					<?php 
