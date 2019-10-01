@@ -4,6 +4,7 @@
     $nama = $roles = $description = $elementary = $junior 
         = $senior = $university = $showSkills = $showPortofolio = $phone = $email = "-";
 
+    // Jika untuk view saja
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         if (isset($_GET['no'])) {
             $no = $_GET['no'];
@@ -24,28 +25,6 @@
             $phone = isset($data['phone']) ? $data['phone'] : "-";
             $email = isset($data['email']) ? $data['email'] : "-";
         }
-    }
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $nama = isset($_POST['header-name']) ? $_POST['header-name'] : "-";
-        $roles = isset($_POST['header-roles']) ? $_POST['header-roles'] : "-";
-        $description = isset($_POST['about-description']) ? $_POST['about-description'] : "-";
-        
-        $elementary = isset($_POST['elementary-school']) ? $_POST['elementary-school'] : "-";
-        $junior = isset($_POST['jh-school']) ? $_POST['jh-school'] : "-";
-        $senior = isset($_POST['sh-school']) ? $_POST['sh-school'] : "-";
-        $university = isset($_POST['university']) ? $_POST['university'] : "-";
-        $educations = "$elementary,$junior,$senior,$university";
-        
-        $showSkills = isset($_POST['show-skills']) ? $_POST['show-skills'] : "-";
-        $showPortofolio = isset($_POST['show-portofolio']) ? $_POST['show-portofolio'] : "-";
-
-        $phone = isset($_POST['phone-number']) ? $_POST['phone-number'] : "-";
-        $email = isset($_POST['email']) ? $_POST['email'] : "-";
-
-        $query = "INSERT INTO `profile` (`nama`, `roles`, `description`, `educations`, `skills`, `portofolio`, `phone`, `email`) 
-                  VALUES ('$nama', '$roles', '$description', '$educations', '$showSkills','$showPortofolio', '$phone', '$email');";
-        mysqli_query(connection(),$query);
     }
 ?>
 <!DOCTYPE html>
