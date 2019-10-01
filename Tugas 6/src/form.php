@@ -1,4 +1,5 @@
 <?php 
+    // Insert data ke database
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $nama = isset($_POST['header-name']) ? $_POST['header-name'] : "-";
         $roles = isset($_POST['header-roles']) ? $_POST['header-roles'] : "-";
@@ -16,9 +17,14 @@
         $phone = isset($_POST['phone-number']) ? $_POST['phone-number'] : "-";
         $email = isset($_POST['email']) ? $_POST['email'] : "-";
 
-        $query = "INSERT INTO `profile` (`nama`, `roles`, `description`, `educations`, `skills`, `portofolio`, `phone`, `email`) 
+        $insertQuery = "INSERT INTO `profile` (`nama`, `roles`, `description`, `educations`, `skills`, `portofolio`, `phone`, `email`) 
                   VALUES ('$nama', '$roles', '$description', '$educations', '$showSkills','$showPortofolio', '$phone', '$email');";
-        mysqli_query(connection(),$query);
+        mysqli_query(connection(), $insertQuery);
+
+        $getNoQuery = "SELECT `no` FROM `profile` WHERE `no` = (SELECT MAX(`no`) FROM `profile`) LIMIT 1";
+        $resultNo = mysqli_query(connection(), $getNoQuery);
+        // Lihat data yang telah diinputkan
+        header('Location: view-profile.php?no='.$resultNo)
     }
 ?>
 
@@ -40,7 +46,7 @@
         <a href="#contact" class="button grid_2"><span>Contact</span></a>
     </nav>
 
-    <form action="view-profile.php" method="post">
+    <form action="form.php" method="post">
         <header class="grid_16">
             <div id="header-content">
                 <div id="header-photo" class="grid_16 alpha omega">
