@@ -19,14 +19,16 @@
         $phone = isset($_POST['phone-number']) ? $_POST['phone-number'] : "-";
         $email = isset($_POST['email']) ? $_POST['email'] : "-";
 
+        // Insert data yang diinput ke dalam database
         $insertQuery = "INSERT INTO `profile` (`nama`, `roles`, `description`, `educations`, `skills`, `portofolio`, `phone`, `email`) 
                   VALUES ('$nama', '$roles', '$description', '$educations', '$showSkills','$showPortofolio', '$phone', '$email');";
         mysqli_query(connection(), $insertQuery);
 
+        // Lihat data yang baru diinsertkan di dalam database
         $getNoQuery = "SELECT `no` FROM `profile` WHERE `no` = (SELECT MAX(`no`) FROM `profile`) LIMIT 1";
-        $resultNo = mysqli_query(connection(), $getNoQuery);
-        // Lihat data yang telah diinputkan
-        header('Location: view-profile.php?no='.$resultNo);
+        $resultQuery = mysqli_query(connection(), $getNoQuery);
+        $resultNo = mysqli_fetch_array($resultQuery);
+        header('Location: view-profile.php?no='.$resultNo['no']);
     }
 ?>
 
