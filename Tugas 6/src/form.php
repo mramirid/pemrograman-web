@@ -1,4 +1,6 @@
 <?php 
+    include('conn.php');
+
     // Insert data ke database
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $nama = isset($_POST['header-name']) ? $_POST['header-name'] : "-";
