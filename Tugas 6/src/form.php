@@ -24,7 +24,7 @@
         $getNoQuery = "SELECT `no` FROM `profile` WHERE `no` = (SELECT MAX(`no`) FROM `profile`) LIMIT 1";
         $resultNo = mysqli_query(connection(), $getNoQuery);
         // Lihat data yang telah diinputkan
-        header('Location: view-profile.php?no='.$resultNo)
+        header('Location: view-profile.php?no='.$resultNo);
     }
 ?>
 
