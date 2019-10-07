@@ -1,5 +1,9 @@
+CREATE DATABASE dbprofile;
+
+USE dbprofile;
+
 CREATE TABLE `profile` (
-	`no` INT NOT NULL AUTO_INCREMENT,
+	`no` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	`nama` varchar(100) DEFAULT NULL,
 	`roles` varchar(100) DEFAULT NULL,
 	`description` varchar(200) DEFAULT NULL,
