@@ -8,7 +8,7 @@
             mysqli_query(connection(), $deleteQuery);
   
             // Kembali ke home
-            header('Location: index.php');
+            header('Location: index.php?status='.$status);
         }  
     }
 ?>
