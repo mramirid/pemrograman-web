@@ -1,16 +1,19 @@
-<?php
-	function connection()
-	{
-		$dbServer = 'localhost';
-		$dbUser = 'root';
-		$dbPass = '';
-		$dbName = "dbprofile";
+<?php 
 
-		$conn = mysqli_connect($dbServer, $dbUser, $dbPass);
+function connection()
+{
+    $dbServer = 'localhost';
+    $dbUser = 'root';
+    $dbPass = '';
+    $dbName = "dbprofile";
 
-		if (!$conn)
-			die('Connection Failed: '.mysqli_error());
+    $conn = mysqli_connect($dbServer, $dbUser, $dbPass);
 
-		return $conn;
-	}
+    if (!$conn)
+        die('Connection Failed: '.mysqli_error());
+
+    mysqli_select_db($conn, $dbName);
+
+    return $conn;
+}
 ?>
