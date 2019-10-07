@@ -31,7 +31,7 @@
 					</thead>
 					<tbody>
 					<?php 
-						$query = "SELECT * FROM profile";
+						$query = "SELECT * FROM `profile`";
 						$result = mysqli_query(connection(), $query);
 					
 						while ($data = mysqli_fetch_array($result)): ?>
