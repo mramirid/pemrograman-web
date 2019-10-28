@@ -48,7 +48,7 @@ $mahasiswaAmir->setListNilai($listNilai);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>TRANSKRIP NILAI</title>
 </head>
 <body>
     <h2>TRANSKRIP NILAI</h2>
