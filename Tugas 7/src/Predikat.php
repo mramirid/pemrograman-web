@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class Predikat
 {
@@ -14,5 +14,3 @@ class Predikat
     public const MULTIPLIER_D = 1;
     public const MULTIPLIER_E = 0;
 }
-
-?>

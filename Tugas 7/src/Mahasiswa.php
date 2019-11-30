@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class Mahasiswa
 {
@@ -69,5 +69,3 @@ class Mahasiswa
         return $this->listNilai;
     }
 }
-
-?>

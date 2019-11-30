@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include "DatabaseHelper.php";
 include "ArrayList.php";
@@ -22,10 +22,8 @@ $listMataKuliah = new ArrayList();
 $listNilai = new ArrayList();
 
 $isBiodataReceived = false;
-while ($tableRow = $queryResult->fetch_assoc())
-{
-    if (!$isBiodataReceived)
-    {
+while ($tableRow = $queryResult->fetch_assoc()) {
+    if (!$isBiodataReceived) {
         // Cukup ambil 1 kali saja
         $mahasiswaAmir->setNPM($tableRow['npm']);
         $mahasiswaAmir->setNama($tableRow['nama']);
@@ -46,10 +44,12 @@ $mahasiswaAmir->setListNilai($listNilai);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>TRANSKRIP NILAI</title>
 </head>
+
 <body>
     <h2>TRANSKRIP NILAI</h2>
 
@@ -77,7 +77,7 @@ $mahasiswaAmir->setListNilai($listNilai);
     </table>
 
     <br>
-    
+
     <table border="1">
         <thead>
             <tr>
@@ -89,19 +89,18 @@ $mahasiswaAmir->setListNilai($listNilai);
             </tr>
         </thead>
 
-        <?php 
+        <?php
 
         $SKS = 3;
         $totalSKS = 0;
         $IPS = 0;
-        for ($i = 0; $i < $mahasiswaAmir->getListNilai()->getSize(); ++$i)
-        {
+        for ($i = 0; $i < $mahasiswaAmir->getListNilai()->getSize(); ++$i) {
             echo "<tr>";
-            echo "  <td>".$mahasiswaAmir->getNPM()."</td>";
-            echo "  <td>".$mahasiswaAmir->getNama()."</td>";
-            echo "  <td>".$mahasiswaAmir->getProdi()."</td>";
-            echo "  <td>".$mahasiswaAmir->getListMataKuliah()->getObject($i)."</td>";
-            echo "  <td>".$mahasiswaAmir->getListNilai()->getObject($i)."</td>";
+            echo "  <td>" . $mahasiswaAmir->getNPM() . "</td>";
+            echo "  <td>" . $mahasiswaAmir->getNama() . "</td>";
+            echo "  <td>" . $mahasiswaAmir->getProdi() . "</td>";
+            echo "  <td>" . $mahasiswaAmir->getListMataKuliah()->getObject($i) . "</td>";
+            echo "  <td>" . $mahasiswaAmir->getListNilai()->getObject($i) . "</td>";
             echo "</tr>";
 
             switch ($mahasiswaAmir->getListNilai()->getObject($i)) {
@@ -140,4 +139,5 @@ $mahasiswaAmir->setListNilai($listNilai);
         </tr>
     </table>
 </body>
+
 </html>
