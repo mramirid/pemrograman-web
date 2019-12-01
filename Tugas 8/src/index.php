@@ -58,10 +58,12 @@ require_once("views/footer.php"); ?>
 <script src="js/jquery.min.js"></script>
 <script>
     $(document).ready(function() {
-        get_jenis = $("#jenis").val();
-        get_kondisi = $("#kondisi").val();
-
         $("#button-filter").click(function() {
+            get_jenis = $("#jenis").val();
+            get_kondisi = $("#kondisi").val();
+
+            if (get_jenis == "" || get_kondisi == "") return;
+
             $.ajax({
                 url : "views/table_inv.php",
                 method : "POST",
