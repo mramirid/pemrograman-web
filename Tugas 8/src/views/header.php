@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login Register</title>
+    <title>Inventaris</title>
     <link rel="stylesheet" href="views/style.css">
 </head>
 <body>
