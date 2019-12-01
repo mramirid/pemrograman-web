@@ -7,7 +7,9 @@
 </head>
 <body>
     <header>
-        <h1>Login</h1>
+        <h1>Aplikasi Pendataan Inventaris Universitas</h1>
+        
+        <br>
 
         <nav>
             <a href="index.php">Home</a>
