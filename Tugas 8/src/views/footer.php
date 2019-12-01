@@ -1,5 +1,5 @@
     <footer>
-        &copy; mramirid <?php date("o"); ?>
+        &copy; @mramirid <?php echo date("o"); ?>
     </footer>
 </body>
 </html>
