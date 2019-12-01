@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Inventaris</title>
     <link rel="stylesheet" href="views/style.css">
+    <link rel="stylesheet/less" type="text/css" href="views/style.less">
+    <script src="js/less.min.js"></script>
 </head>
 <body>
     <header>
