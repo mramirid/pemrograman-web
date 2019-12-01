@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    width: 80%;
+    margin: 40px auto;
+}
+
+header {
+    border-bottom: 1px solid grey;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+footer {
+    border-top: 1px solid grey;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#error {
+    background-color: rgb(212, 19, 65);
+    color: white;
+    padding: 5px;
+}
