@@ -20,3 +20,8 @@ footer {
     padding: 5px;
     margin-top: 20px;
 }
+
+a {
+    text-decoration: none;
+    margin-right: 20px;
+}
